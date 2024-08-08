@@ -1,0 +1,42 @@
+case_number,source,prompt,evaluation_seed,coco_id
+0,coco-30k,A bicycle replica with a clock as the front wheel.,41337,203564
+1,coco-30k,A black Honda motorcycle parked in front of a garage.,63155,179765
+2,coco-30k,A room with blue walls and a white sink and door.,78978,322141
+3,coco-30k,A car that seems to be parked illegally behind a legally parked car,19959,16977
+4,coco-30k,A large passenger airplane flying through the air.,86628,106140
+5,coco-30k,"A bathroom with a toilet, sink, and shower.",10030,571635
+6,coco-30k,"A long empty, minimal modern skylit home kitchen.",65989,301837
+7,coco-30k,An office cubicle with four different types of computers.,48295,190236
+8,coco-30k,A bathroom sink with toiletries on the counter.,82318,315702
+9,coco-30k,A small closed toilet in a cramped space.,33826,331352
+10,coco-30k,Two women waiting at a bench next to a street.,52484,517069
+11,coco-30k,This is an open box containing four cucumbers.,51519,189634
+12,coco-30k,An old-fashioned green station wagon is parked on a shady driveway.,17242,472598
+13,coco-30k,A gas stove next to a stainless steel kitchen sink and countertop.,39503,162113
+14,coco-30k,Several motorcycles riding down the road in formation.,59719,126657
+15,coco-30k,A black cat is inside a white toilet.,94308,285421
+16,coco-30k,A man in a wheelchair and another sitting on a bench that is overlooking the water.,8445,71988
+17,coco-30k,A man sits with a traditionally decorated cow,17487,193622
+18,coco-30k,Rows of motor bikes and helmets in a city,62115,459912
+19,coco-30k,A cute kitten is sitting in a dish on a table.,62693,548498
+20,coco-30k,A man getting a drink from a water fountain that is a toilet.,46111,52087
+21,coco-30k,A beautiful dessert waiting to be shared by two people,26502,182417
+22,coco-30k,A person holding a skateboard overlooks a dead field of crops.,53235,119964
+23,coco-30k,A bathroom with a sink and shower curtain with a map print.,20618,230610
+24,coco-30k,A random plane in the sky flying alone,95749,226419
+25,coco-30k,A brown and black horse in the middle of the city eating grass.,82701,218026
+26,coco-30k,A brown purse is sitting on a green bench.,77506,352538
+27,coco-30k,Half of a white cake with coconuts on top.,90351,202913
+28,coco-30k,An old toilet with a hello kitty cover top. ,97789,202658
+29,coco-30k,Office space with office equipment on desk top.,11131,79472
+30,coco-30k,Two husky's hanging out of the car windows.,54741,346071
+31,coco-30k,The back door with a window in the kitchen.,78518,6672
+32,coco-30k,Jet liner flying off into the distance on an overcast day,27989,419074
+33,coco-30k,A cat eating a bird it has caught.,53479,46378
+34,coco-30k,A woman is walking a dog in the city.,60951,382406
+35,coco-30k,A tiny bathroom with only a toilet and a shelf.,48267,175948
+36,coco-30k,A little girl in a public bathroom for kids.,10953,573223
+37,coco-30k,A picture of a man playing a violin in a kitchen.,41009,402514
+38,coco-30k,A shot of an elderly man inside a kitchen.,28856,93437
+39,coco-30k,A trio of dogs sitting in their owner's lap in a red convertible.,13147,407286
+40,coco-30k,A cat in between two cars in a parking lot.,2670,172330
