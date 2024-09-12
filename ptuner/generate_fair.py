@@ -28,7 +28,7 @@ basepath = '/project/'
 
 def load_components(model_version=' ' ,device='cuda:1'):
     model_version='CompVis/stable-diffusion-v1-4'
-    # 加载各个生产组件
+    
     vae = AutoencoderKL.from_pretrained(model_version, subfolder="vae")
 
     # 2. Load the tokenizer and text encoder to tokenize and encode the text.
@@ -229,7 +229,7 @@ if __name__ == '__main__':
 
     # model_name='train_Asian.pth'
     fair_type='gender_fair'
-    # 保存图片的文件夹
+    
     save_path='fair_output'
 
     start_perturb_step=10
@@ -238,22 +238,22 @@ if __name__ == '__main__':
     start_tuning_step=150
     end_tuning_step=20
 
-    # 保存图片文件夹名称
+    
     file_name='no-tuning-beta-1-10-50'
     safety_concept = 'sexual, nudity,nude,'
 
     with torch.no_grad():
         generate_images(device=device, prompts_path=prompts_path,fair_type=fair_type,save_path=save_path,start_perturb_step=start_perturb_step,end_perturb_step=end_perturb_step,tdown=tdown,file_name=file_name,safety_concept=safety_concept)
 
-    # 记录程序结束时间
+   
     end_time = time.time()
-    # 计算程序执行时间（以秒为单位）
+    
     execution_time = end_time - start_time
 
-    # 将执行时间转换为小时
+    
     execution_time_in_hours = execution_time / 3600
 
-    # 打印执行时间
+    
     print(f" {execution_time} ")
     print(f" {execution_time_in_hours} ")
 
