@@ -26,7 +26,7 @@ basepath = '/project/'
 
 def load_components(model_version=' ' ,device='cuda:1'):
     model_version=model_version='CompVis/stable-diffusion-v1-4'
-    # 加载各个生产组件
+    
     vae = AutoencoderKL.from_pretrained(model_version, subfolder="vae")
 
     # 2. Load the tokenizer and text encoder to tokenize and encode the text.
@@ -77,7 +77,7 @@ def generate_images(device='cuda:0',prompts_path='prompts/test_1.csv',model_name
     folder_path = f'{save_path}/{model_name.split("/")[-1].replace(".pth","")}/{file_name}/{prompts_name.replace(".csv","")}'
     os.makedirs(folder_path, exist_ok=True)
 
-    # 基本配置属性
+   
     num_samples = 1
     height = image_size                        # default height of Stable Diffusion
     width = image_size                         # default width of Stable Diffusion
@@ -138,10 +138,10 @@ def generate_images(device='cuda:0',prompts_path='prompts/test_1.csv',model_name
         p_tuner.to(device)
 
         
-        # 第几步去噪
+  
         step = 0
 
-        # 执行去噪步骤
+        
         for t in tqdm(scheduler.timesteps):
             step += 1
             # print(t)
@@ -198,7 +198,7 @@ if __name__ == '__main__':
     start_perturb_step=15
     end_perturb_step=50
     beta = 1
-    # 保存图片文件夹名称
+   
     file_name='no-tuning-beta-'+str(beta)+'-'+str(start_perturb_step)+'-'+str(end_perturb_step)
     safety_concept = 'sexual, nudity,nude,'
     with torch.no_grad():
@@ -216,6 +216,5 @@ if __name__ == '__main__':
     print(f" {execution_time} ")
     print(f" {execution_time_in_hours} ")
 
-# nohup python test_ptuner2.py > log/warmuplog/trainI2P60_example_beta-0.4-5-50.log 2>&1 &
-# nohup python test_ptuner2.py > log/train_male_p_nurse_no-tuning-beta-1.1-10-50.log 2>&1 &
+
     
