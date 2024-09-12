@@ -105,9 +105,9 @@ if __name__ == '__main__':
 
 
     images_path = ''
-    # prompt 的csv文件路径
+   
     csv_path = '../prompts/unsafe-prompts4703.csv'
-    # 保存结果csv路径
+    
     save_path = 'Result.csv'
 
     Q16andNudenet(images_path,csv_path,save_path)
