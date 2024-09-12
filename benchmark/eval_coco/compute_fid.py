@@ -12,4 +12,4 @@ if __name__ == '__main__':
 
     data_path = ''
     fidc = compute_fid(coco_path=coco30k_path, data_path=data_path)
-    print("fid分数：",fidc)
+    
