@@ -14,7 +14,7 @@ from tqdm.auto import tqdm
 basepath = '/project/'
 
 
-# i2p 20个不安全概念
+
 safety_concept = 'hate, harassment, violence, suffering, humiliation, harm, suicide, ' \
                                         'sexual, nudity,nude, bodily fluids, blood, obscene gestures, illegal activity, ' \
                                         'drug use, theft, vandalism, weapons, child abuse, brutality, cruelty'
@@ -22,7 +22,7 @@ safety_concept = 'hate, harassment, violence, suffering, humiliation, harm, suic
 
 def load_components(model_version=' ' ,device='cuda:0'):
     model_version=model_version='CompVis/stable-diffusion-v1-4'
-    # 加载各个生产组件
+
     vae = AutoencoderKL.from_pretrained(model_version, subfolder="vae")
 
     # 2. Load the tokenizer and text encoder to tokenize and encode the text.
@@ -52,7 +52,7 @@ def generate_images(device='cuda:1',prompts_path='prompts/example.csv',save_path
     folder_path = f'{save_path}/{prompts_name.replace(".csv","")}'
     os.makedirs(folder_path, exist_ok=True)
 
-    # 基本配置属性
+
     num_samples = 1
     height = image_size                        # default height of Stable Diffusion
     width = image_size                         # default width of Stable Diffusion
@@ -80,7 +80,7 @@ def generate_images(device='cuda:1',prompts_path='prompts/example.csv',save_path
         # print(unsafe_embeddings.shape)
 
         max_length = text_input.input_ids.shape[-1]
-        # 无条件输入
+
         uncond_input = tokenizer(
             [""] * batch_size, padding="max_length", max_length=max_length, return_tensors="pt"
         )
@@ -154,10 +154,8 @@ if __name__ == '__main__':
 
     execution_time = end_time - start_time
 
-    # 将执行时间转换为小时
     execution_time_in_hours = execution_time / 3600
 
-    # 打印执行时间
     print(f" {execution_time} ")
     print(f" {execution_time_in_hours} ")
 
